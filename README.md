@@ -10,7 +10,7 @@ Additionally, it prints the Server header and the HTML title of the response.
 Usage:
 
 ```
-nmap --script http-pna-detect -p80,443 <target>
+nmap --script http-pna-detect.nse -p80,443 <target>
 ```
 
 This can be run on your internal networks or localhost as : 
@@ -29,3 +29,5 @@ PORT   STATE SERVICE VERSION
 | Origin: http://example.com
 |_Title: Not found
 ```
+
+Running this with the service detection (`-sV`) flag when scanning non-standard web ports is recommended. 
